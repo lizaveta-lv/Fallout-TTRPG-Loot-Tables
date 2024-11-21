@@ -1,0 +1,780 @@
+{
+    "lootTable":{
+        "Caps":[
+            {
+                "minRoll": 1,
+                "maxRoll": 5,
+                "dice": "5d10"
+            },
+            {
+                "minRoll": 6,
+                "maxRoll": 15,
+                "dice": "2d6 x 17"
+            },
+            {
+                "minRoll": 16,
+                "maxRoll": 20,
+                "dice": "4d4 x 25"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 25,
+                "dice": "4d6 x 50"
+            },
+            {
+                "minRoll": 26,
+                "maxRoll": 30,
+                "dice": "5d4 x 100"
+            },
+            {
+                "minRoll": 30,
+                "maxRoll": 1000,
+                "dice": "6d6 x 100"
+            }
+
+        ],
+        "Junk":[
+            {
+                "minRoll": 1,
+                "maxRoll": 3,
+                "grade": 1,
+                "dice": "1d4"
+            },
+            {
+                "minRoll": 4,
+                "maxRoll": 6,
+                "grade": 1,
+                "dice": "2d6"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 9,
+                "grade": 2,
+                "dice": "1d4"
+            },
+            {
+                "minRoll": 10,
+                "maxRoll": 12,
+                "grade": 2,
+                "dice": "2d6"
+            },
+            {
+                "minRoll": 13,
+                "maxRoll": 16,
+                "grade": 3,
+                "dice": "1d4"
+            },
+            {
+                "minRoll": 17,
+                "maxRoll": 20,
+                "grade": 3,
+                "dice": "2d6"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 1
+            }
+
+        ],
+        "Food":[
+            {
+                "roll": 1,
+                "name": "BlamCo Mac & Cheese"
+            },
+            {
+                "roll": 2,
+                "name": "Canned Dog Food"
+            },
+            {
+                "roll": 3,
+                "name": "Cram"
+            },
+            {
+                "roll": 4,
+                "name": "Dandy Boy Apples"
+            },
+            {
+                "roll": 5,
+                "name": "Fancy Lads Snack Cakes"
+            },
+            {
+                "roll": 6,
+                "name": "InstaMash"
+            },
+            {
+                "roll": 7,
+                "name": "Noodle cup"
+            },
+            {
+                "roll": 8,
+                "name": "Pork n'Beans"
+            },
+            {
+                "roll": 9,
+                "name": "Potato Crisps"
+            },
+            {
+                "roll": 10,
+                "name": "Salisbury Steak"
+            },
+            {
+                "roll": 11,
+                "name": "Sugar Bombs"
+            },
+            {
+                "roll": 12,
+                "name": "Yum Yum Deviled Eggs"
+            },
+            {
+                "roll": 13,
+                "name": "Baked Bloatfly"
+            },
+            {
+                "roll": 14,
+                "name": "Gecko steak"
+            },
+            {
+                "roll": 15,
+                "name": "Grilled Radroach"
+            },
+            {
+                "roll": 16,
+                "name": "Grilled Radstag"
+            },
+            {
+                "roll": 17,
+                "name": "Iguana on a Stick"
+            },
+            {
+                "roll": 18,
+                "name": "Mole rat chunks"
+            },
+            {
+                "roll": 19,
+                "name": "Ribeye steak"
+            },
+            {
+                "roll": 20,
+                "name": "Deathclaw Steak"
+            }
+
+        ],
+        "Drinks":[
+            {
+                "minRoll": 1,
+                "maxRoll": 2,
+                "name": "Beer or Wine"
+            },
+            {
+                "minRoll": 3,
+                "maxRoll": 5,
+                "name": "Rum, Scotch, Whiskey, Vodka, or Wasteland Tequila"
+            },
+            {
+                "minRoll": 6,
+                "maxRoll": 6,
+                "name": "Absinthe or Moonshine"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 8,
+                "name": "Coffee"
+            },
+            {
+                "minRoll": 9,
+                "maxRoll": 11,
+                "name": "Nuka-Cola"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 12,
+                "name": "Nuka Cola Cherry"
+            },
+            {
+                "minRoll": 13,
+                "maxRoll": 14,
+                "name": "Sunset Sarsaparilla"
+            },
+            {
+                "minRoll": 15,
+                "maxRoll": 15,
+                "name": "Nuka Cola Quantum"
+            },
+            {
+                "minRoll": 16,
+                "maxRoll": 18,
+                "name": "Dirty water (8oz)"
+            },
+            {
+                "minRoll": 19,
+                "maxRoll": 20,
+                "name": "Beer or Wine"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 1
+            }
+
+        ],
+        "Minor_Chems":[
+            {
+                "minRoll": 1,
+                "maxRoll": 1,
+                "name": "Coyote tobacco chew"
+            },
+            {
+                "minRoll": 2,
+                "maxRoll": 2,
+                "name": "Healing Powder"
+            },
+            {
+                "minRoll": 3,
+                "maxRoll": 3,
+                "name": "Rebound"
+            },
+            {
+                "minRoll": 4,
+                "maxRoll": 4,
+                "name": "Cateye"
+            },
+            {
+                "minRoll": 5,
+                "maxRoll": 5,
+                "name": "Buffout"
+            },
+            {
+                "minRoll": 6,
+                "maxRoll": 6,
+                "name": "Antivenom"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 7,
+                "name": "Jet"
+            },
+            {
+                "minRoll": 8,
+                "maxRoll": 8,
+                "name": "Day Tripper"
+            },
+            {
+                "minRoll": 9,
+                "maxRoll": 9,
+                "name": "Mentats (Regular, Grape, Orange or Berry"
+            },
+            {
+                "minRoll": 10,
+                "maxRoll": 10,
+                "name": "Med-X"
+            },
+            {
+                "minRoll": 11,
+                "maxRoll": 11,
+                "name": "Psycho"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 12,
+                "name": "Steady"
+            },
+            {
+                "minRoll": 13,
+                "maxRoll": 13,
+                "name": "Fixer"
+            },
+            {
+                "minRoll": 14,
+                "maxRoll": 14,
+                "name": "Hydra"
+            },
+            {
+                "minRoll": 15,
+                "maxRoll": 15,
+                "name": "Rad-X"
+            },
+            {
+                "minRoll": 16,
+                "maxRoll": 16,
+                "name": "Daddy-O"
+            },
+            {
+                "minRoll": 17,
+                "maxRoll": 17,
+                "name": "Overdrive"
+            },
+            {
+                "minRoll": 18,
+                "maxRoll": 18,
+                "name": "Stimpak or Robot Repair Kit"
+            },
+            {
+                "minRoll": 19,
+                "maxRoll": 19,
+                "name": "RadAway"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 1000,
+                "choice": 1
+            }
+
+        ],
+        "Major_Chems":[
+            {
+                "minRoll": 1,
+                "maxRoll": 6,
+                "name": "First Aid Kit"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 7,
+                "name": "Fury"
+            },
+            {
+                "minRoll": 8,
+                "maxRoll": 9,
+                "name": "Calmex"
+            },
+            {
+                "minRoll": 10,
+                "maxRoll": 10,
+                "name": "X-cell"
+            },
+            {
+                "minRoll": 11,
+                "maxRoll": 13,
+                "name": "Addictol"
+            },
+            {
+                "minRoll": 14,
+                "maxRoll": 17,
+                "name": "Doctor's Bag"
+            },
+            {
+                "minRoll": 18,
+                "maxRoll": 18,
+                "name": "Super Stimpak"
+            },
+            {
+                "minRoll": 19,
+                "maxRoll": 19,
+                "name": "Auto-Inject Stimpak"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 20,
+                "name": "Auto-Inject Super Stimpak"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 2
+            }
+
+        ],
+        "Ammo":[
+            {
+                "minRoll": 1,
+                "maxRoll": 1,
+                "dice": "4d8",
+                "name": "9mm"
+            },
+            {
+                "minRoll": 2,
+                "maxRoll": 2,
+                "dice": "3d20",
+                "name": "5mm"
+            },
+            {
+                "minRoll": 3,
+                "maxRoll": 3,
+                "dice": "3d10",
+                "name": ".32"
+            },
+            {
+                "minRoll": 4,
+                "maxRoll": 4,
+                "dice": "2d8",
+                "name": "20 gauge"
+            },
+            {
+                "minRoll": 5,
+                "maxRoll": 5,
+                "dice": "2d6",
+                "name": "12 gauge"
+            },
+            {
+                "minRoll": 6,
+                "maxRoll": 6,
+                "dice": "2d20",
+                "name": "5.56"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 7,
+                "dice": "3d10",
+                "name": "10mm"
+            },
+            {
+                "minRoll": 8,
+                "maxRoll": 8,
+                "dice": "3d8",
+                "name": ".357"
+            },
+            {
+                "minRoll": 9,
+                "maxRoll": 9,
+                "dice": "2d8",
+                "name": ".45"
+            },
+            {
+                "minRoll": 10,
+                "maxRoll": 10,
+                "dice": "1d1",
+                "name": "Tank of Flamer Fuel"
+            },
+            {
+                "minRoll": 11,
+                "maxRoll": 11,
+                "dice": "2d12",
+                "name": ".44"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 12,
+                "dice": "1d12",
+                "name": "Energy Cells"
+            },
+            {
+                "minRoll": 13,
+                "maxRoll": 13,
+                "dice": "1d10",
+                "name": "Microfusion Cells"
+            },
+            {
+                "minRoll": 14,
+                "maxRoll": 14,
+                "dice": "3d6",
+                "name": ".45-70 Gov't"
+            },
+            {
+                "minRoll": 15,
+                "maxRoll": 15,
+                "dice": "3d6",
+                "name": ".308"
+            },
+            {
+                "minRoll": 16,
+                "maxRoll": 16,
+                "dice": "1d4",
+                "name": ".50"
+            },
+            {
+                "minRoll": 17,
+                "maxRoll": 17,
+                "dice": "1d8",
+                "name": "2mm EC"
+            },
+            {
+                "minRoll": 18,
+                "maxRoll": 18,
+                "dice": "1d1",
+                "name": "Fusion Core"
+            },
+            {
+                "minRoll": 19,
+                "maxRoll": 19,
+                "dice": "1d4",
+                "name": "Missiles"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 20,
+                "dice": "1d1",
+                "name": "Mini-Nuke"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 3
+            }
+
+
+        ],
+        "Weapons":[
+            {
+                "minRoll": 1,
+                "maxRoll": 6,
+                "name": "Pistol"
+                
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 8,
+                "name": "SMG"
+            },
+            {
+                "minRoll": 9,
+                "maxRoll": 11,
+                "name": "Energy Weapon"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 15,
+                "name": "Shotgun"
+            },
+            {
+                "minRoll": 16,
+                "maxRoll": 18,
+                "name": "Rifle"
+            },
+            {
+                "minRoll": 19,
+                "maxRoll": 19,
+                "name": "Big Gun"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 1000,
+                "choice": 2
+            }
+
+
+        ],
+        "Pistol":[
+            {
+                "minRoll": 1,
+                "maxRoll": 1,
+                "name": "Flare Gun"
+            },
+            {
+                "minRoll": 2,
+                "maxRoll": 6,
+                "name": ".32 Pistol"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 11,
+                "name": "9mm Pistol"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 14,
+                "name": ".357 Magnum Revolver"
+            },
+            {
+                "minRoll": 15,
+                "maxRoll": 17,
+                "name": ".44 Magnum Revolver"
+            },
+            {
+                "minRoll": 18,
+                "maxRoll": 19,
+                "name": "10mm Pistol"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 20,
+                "name": "Ranger Sequoia"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 3
+            }
+
+
+        ],
+        "SMG's":[
+            {
+                "minRoll": 1,
+                "maxRoll": 1,
+                "name": "Flare Gun"
+            },
+            {
+                "minRoll": 2,
+                "maxRoll": 6,
+                "name": ".32 Pistol"
+            },
+            {
+                "minRoll": 7,
+                "maxRoll": 11,
+                "name": "9mm Pistol"
+            },
+            {
+                "minRoll": 12,
+                "maxRoll": 14,
+                "name": ".357 Magnum Revolver"
+            },
+            {
+                "minRoll": 15,
+                "maxRoll": 17,
+                "name": ".44 Magnum Revolver"
+            },
+            {
+                "minRoll": 18,
+                "maxRoll": 19,
+                "name": "10mm Pistol"
+            },
+            {
+                "minRoll": 20,
+                "maxRoll": 20,
+                "name": "H&K G11"
+            },
+            {
+                "minRoll": 21,
+                "maxRoll": 1000,
+                "choice": 3
+            }
+
+        ],
+        "Skill Magazines":[
+            {
+                "name": "Milsurp Review",
+                "effect": "Guns +1"
+            },
+            {
+                "name": "Future Weapons Today",
+                "effect": "Energy Weapons +1"
+            },
+            {
+                "name": "Patriot's Cookbook",
+                "effect": "Explosives +1"
+            },
+            {
+                "name": "Tæles of Chivalrie",
+                "effect": "Melee +1"
+            },
+            {
+                "name": "Boxing Times",
+                "effect": "Unarmed +1"
+            },
+            {
+                "name": "Today's Physician",
+                "effect": "Medicine +1"
+            },
+            {
+                "name": "Locksmith's Reader",
+                "effect": "Breach +1"
+            },
+            {
+                "name": "Fixin’ Things",
+                "effect": "Crafting +1"
+            },
+            {
+                "name": "¡La Fantoma!",
+                "effect": "Sneak +1"
+            },
+            {
+                "name": "Lad's Life",
+                "effect": "Survival +1"
+            },
+            {
+                "name": "Salesman Weekly",
+                "effect": "Barter +1"
+            },
+            {
+                "name": "Horror Comics",
+                "effect": "Intimidation +1"
+            },
+            {
+                "name": "Meeting People",
+                "effect": "Speech +1"
+            },
+            {
+                "name": "Programmer's Digest",
+                "effect": "Science +1"
+            }
+        ]
+
+    },
+    "junkTable":{
+        "Acid":[
+
+        ],
+        "Adhesive":[
+
+        ],
+        "Aluminum":[
+
+
+        ],
+        "Antiseptic":[
+
+        ],
+        "Asbestos":[
+
+        ],
+        "Ballistic Fiber":[
+
+        ],
+        "Ceramic":[
+
+        ],
+        "Circuitry":[
+
+        ],
+        "Cloth":[
+
+        ],
+        "Copper":[
+
+        ],
+        "Crystal":[
+
+        ],
+        "Fertilizer":[
+
+        ],
+        "Fiber Optics":[
+
+        ],
+        "Fiberglass":[
+
+        ],
+        "Gears":[
+
+        ],
+        "Glass":[
+
+        ],
+        "Lead":[
+
+        ],
+        "Leather":[
+
+        ],
+        "Nuclear Material":[
+
+        ],
+        "Oil":[
+
+        ],
+        "Paint":[
+
+        ],
+        "Plastic":[
+
+        ],
+        "Rubber":[
+
+        ],
+        "Screw":[
+
+        ],
+        "Silver":[
+
+        ],
+        "Spring":[
+
+        ],
+        "Steel":[
+
+        ],
+        "Wood":[
+
+        ]
+    }
+}

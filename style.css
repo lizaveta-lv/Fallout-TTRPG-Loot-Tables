@@ -1,0 +1,73 @@
+* {
+    font-family: Monofonto, Verdana;
+    scroll-behavior: smooth;
+    overflow: wrap;
+    --background-dark: #1a1a1a;
+    --background-light: #ffffff;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  table, th, td {
+    border: 2px solid #000000; 
+    padding: 10px;
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+.inline-left {
+    display: inline-flex;
+    
+}
+input{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.biggerBtn {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    
+}
+
+/*== Removing arrows from numbe inputs ==*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  

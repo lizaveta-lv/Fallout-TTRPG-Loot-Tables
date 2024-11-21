@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loot Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.cdnfonts.com/css/monofonto" rel="stylesheet">
+  </head>
+  <body>
+    <header class="inline-left">
+        <h3> Fallout TTRPG Loot Generator</h3>
+        <nav>
+            <label>Ruleset</label> 
+            <select id="rulebook">
+                <option >
+                    Fallout TTRPG v2.0 by Arcane Arcade
+                </option>
+            </select> 
+            <span class="inline-left hidden">
+                <label>Theme</label> 
+                <select>
+                    <option>
+                        Light theme
+                    </option>
+                    <option>
+                        Dark theme
+                    </option>
+                </select>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <Table>
+            <tr>
+                <th>Luck Roll</th>
+                <th>Items</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <th>
+                        <p class="inline-left">
+                        <span class="container">
+                            <input type="number" id="initLuckRoll" >
+                        </span>
+                        <span class="container">
+                            <button id="generateBtn" class="biggerBtn">Generate</button>
+                            <button id="generateClear" style="color: darkred">Clear All</button>
+                        </span>
+                        </p>
+                    </th>
+                    <th>Total list of items should go there</th>
+                </tr>
+                <tr id="secCaps" class="hidden">
+                    <th><span class="container">
+                        <label>Caps</label>
+                        <p class="inline-left">
+                        
+                        <span class="container">
+                            <input type="number" id="capsLuckRoll">
+                        </span>
+                        <span class="container">
+                            <button id="generateBtn" class="biggerBtn" onclick="getCapsResult()">Generate</button>
+                            <button style="color: darkred" onclick="clearSection('capsLuckRoll')">Clear</button>
+                        </span>
+                        
+                        
+                    </p></span></th>
+                    <th><p id="capsResult"></p></th>
+                </tr>
+                <tr id="secJunk" class="hidden">
+                    <th>
+                        <span class="container">
+                            <label>Junk</label><p class="inline-left">
+                        
+                            <span class="container">
+                                <input type="number" id="junkLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn" onclick="getJunkResult()">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('junkLuckRoll')">Clear</button>
+                            </span>
+                        
+                        
+                    </p></span></th>
+                    <th><p id="junkResult"></p></th>
+                </tr>
+                <tr  id="secFood" class="hidden">
+                    <th><span class="container">
+                        <label>Food</label>
+                    
+                        <p class="inline-left">
+                        <span class="container">
+                            <input type="number" id="foodLuckRoll">
+                        </span>
+                        <span class="container">
+                            <button id="generateBtn" class="biggerBtn" onclick="getFoodResult()">Generate</button>
+                            <button style="color: darkred" onclick="clearSection('foodLuckRoll')">Clear</button>
+                        </span>
+                    </p></span></th>
+                    <th><p id="foodResult"></p></th>
+                </tr>
+                <tr id="secDrinks" class="hidden">
+                    <th><span class="container">
+                        <label>Food</label>
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="drinksLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn" onclick="getDrinksResult()">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('drinksLuckRoll')">Clear</button>
+                            </span>
+                        </p>
+                        </span>
+                    </th>
+                    <th><p id="drinksResult"></p></th>
+                </tr>
+                <tr id="secMinChems" class="hidden">
+                    <th><span class="container">
+                        <label>Chems and Medicine</label>
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="chemsLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn" onclick="getChemsResult()">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('chemsLuckRoll')">Clear</button>
+                            </span>
+                        </p>
+                        </span>
+                    </th>
+                    <th><p id="chemsResult"></p></th>
+                </tr>
+                <tr id="secMajChems" class="hidden">
+                    <th>
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="majChemsLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('majChemsLuckRoll')">Clear</button>
+                            </span>
+                        </p>
+                    </th>
+                    <th>Major Chems here</th>
+                </tr>
+                <tr id="secAmmo" class="hidden">
+                    <th><span class="container">
+                        <label>Ammo</label>
+                    
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="ammoLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn" onclick="getAmmoResults()">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('ammoLuckRoll')">Clear</button>
+                            </span>
+                        </p></span>
+                    </th>
+                    <th><p id="ammoResult"></p></th>
+                </tr>
+                <tr  id="secWeapons" class="hidden">
+                    <th>
+                        <span class="container">
+                            <label>Weapons</label>
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="weaponsLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn" onclick="getWeaponResult()">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('weaponsLuckRoll')">Clear</button>
+                            </span>
+                        </p></span>
+                    </th>
+                    <th><p id="weaponsResult"></p></th>
+                </tr>
+                <tr id="secExplosives" class="hidden">
+                    <th>
+                        <p class="inline-left">
+                            <span class="container">
+                                Explosives
+                            </span>
+                            <span class="container">
+                                
+                            </span>
+                        </p>
+                    </th>
+                    <th>This ruleset does not support this loot drop (no loot table for this item type exist)</th>
+                </tr>
+                <tr id="secArmor" class="hidden">
+                    <th>
+                        <p class="inline-left">
+                            <span class="container">
+                                Armor
+                            </span>
+                            <span class="container">
+                                
+                            </span>
+                        </p>
+                    </th>
+                    <th>This ruleset does not support this loot drop (no loot table for this item type exist)</th>
+                </tr>
+                <tr id="secMagazine" class="hidden">
+                    <th>
+                        <p class="inline-left">
+                            <span class="container">
+                                <input type="number" id="magazLuckRoll">
+                            </span>
+                            <span class="container">
+                                <button id="generateBtn" class="biggerBtn">Generate</button>
+                                <button style="color: darkred" onclick="clearSection('magazLuckRoll')">Clear</button>
+                            </span>
+                        </p>
+                    </th>
+                    <th>Skill Magazines here</th>
+                </tr>
+            </tbody>
+        </Table>
+    </main>
+    <footer>
+    </footer>
+    <script src="code.js"></script>
+  </body>
+</html>
